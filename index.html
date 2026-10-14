@@ -26,6 +26,7 @@
     <img src="assets/img/logo-janusoy.png" alt="JANUSOY">
   </a>
   <nav class="nav" id="nav">
+    <a href="#films"><span class="ko">영상</span><span class="en">Films</span></a>
     <a href="#brand"><span class="ko">브랜드</span><span class="en">Brand</span></a>
     <a href="#story"><span class="ko">스토리</span><span class="en">Story</span></a>
     <a href="#products"><span class="ko">제품</span><span class="en">Products</span></a>
@@ -75,6 +76,48 @@
     <span>PLANT BASED</span><i>●</i><span>맛있소이!</span><i>●</i><span>GOOD CHOICE</span><i>●</i><span>NON-GMO</span><i>●</i><span>KIND PLANET</span><i>●</i><span>DELICI-SOY!</span><i>●</i><span>100% 식물성 단백질</span><i>●</i>
   </div>
 </div>
+
+<!-- ───────── Films ───────── -->
+<section class="sec films-sec" id="films">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="label">++ FILMS</p>
+      <h2><span class="ko">콩들의 이야기,<br>영상으로 만나보세요</span><span class="en">The Soybeans,<br>Now Playing</span></h2>
+    </header>
+
+    <div class="films">
+      <article class="film reveal">
+        <button type="button" class="film-shot" data-film="official" aria-label="야누소이 오피셜 필름 재생 / Play JANUSOY Official Film">
+          <img src="assets/img/film-official.jpg" alt="JANUSOY Official Film — 돼지 옷을 입고 거울 앞에 선 콩" width="1600" height="900" loading="lazy">
+          <video class="teaser" src="assets/video/teaser-official.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+          <span class="play-pill" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg><span class="ko">재생</span><span class="en">PLAY</span></span>
+        </button>
+        <div class="film-info">
+          <p class="kind">OFFICIAL FILM <i></i> 01:13 <i></i> <span class="ko">한국어 자막</span><span class="en">English subtitles</span></p>
+          <h3><span class="ko">야누소이 오피셜 필름</span><span class="en">JANUSOY Official Film</span></h3>
+          <p><span class="ko">식탁에서 외면받던 콩들이 소·닭·돼지 옷을 입고 변신하기까지. 야누소이의 브랜드 스토리를 한 편의 애니메이션으로 담았습니다.</span>
+             <span class="en">From the soybeans left behind on the plate to their great disguise in cow, chicken and pig suits — the JANUSOY brand story in one animated film.</span></p>
+        </div>
+      </article>
+
+      <article class="film film-mv reveal">
+        <button type="button" class="film-shot" data-film="mv" aria-label="8cm 오피셜 뮤직비디오 재생 / Play 8cm Official Music Video">
+          <img src="assets/img/film-mv.jpg" alt="8cm Official Music Video — 골목에 선 세 친구" width="1600" height="900" loading="lazy">
+          <video class="teaser" src="assets/video/teaser-mv.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+          <span class="play-pill" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg><span class="ko">재생</span><span class="en">PLAY</span></span>
+        </button>
+        <div class="film-info">
+          <p class="kind">MUSIC VIDEO <i></i> 01:39</p>
+          <h3><span class="ko">8cm — 오피셜 뮤직비디오</span><span class="en">8cm — Official Music Video</span></h3>
+          <p><span class="ko">고기들의 도시 한복판, 소 옷을 입은 8센티 콩 하나가 마이크를 잡았습니다. “Two faces. Both mine.”</span>
+             <span class="en">In the middle of a city of meat, one 8-centimeter bean in a cow suit grabs the mic. “Two faces. Both mine.”</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <!-- ───────── Brand philosophy ───────── -->
 <section class="sec brand-sec" id="brand">
@@ -369,6 +412,7 @@
       <p>Plant-Based Alternative Meat Brand<br>by DADDYFOOD</p>
     </div>
     <nav>
+      <a href="#films"><span class="ko">영상</span><span class="en">Films</span></a>
       <a href="#brand"><span class="ko">브랜드</span><span class="en">Brand</span></a>
       <a href="#story"><span class="ko">스토리</span><span class="en">Story</span></a>
       <a href="#products"><span class="ko">제품</span><span class="en">Products</span></a>
@@ -378,6 +422,14 @@
     <p class="copy">© 2026 DADDYFOOD. All rights reserved.</p>
   </div>
 </footer>
+
+<div class="player" id="player" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+  <div class="player-box">
+    <button type="button" class="player-close" aria-label="닫기 / Close"><span></span><span></span></button>
+    <video id="player-video" controls playsinline preload="metadata"></video>
+    <p class="player-title"></p>
+  </div>
+</div>
 
 <script src="assets/js/main.js"></script>
 </body>
